@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>ESP Web Server</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="fontawesome.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="w3.css">
+    <link rel="stylesheet" type="text/css" href="w3-theme.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="edit.css"> -->
+</head>
+
+<body>
+
+    <!-- Navbar TOP -->
+    <div class="w3-top">
+        <div class="w3-display-container w3-theme" style="height:43px;">
+            <a class="w3-display-left w3-button w3-hover-theme w3-padding" href="/"><i class="fa fa-chevron-left"></i>&nbsp;Back</a>
+            <div class="w3-display-middle w3-medium"><b>Weather</b></div>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="w3-container w3-content" style="max-width: 370px; margin-top: 50px;">
+        <p class="w3-text-theme w3-small">`OBSERVATION`</p>
+        <h5 style="margin-top: -10px;"><b>`CITY_NAME`</b></h5>
+        <div class="w3-display-container" style="margin: -10px 0 0 -10px;">
+            <img `ICON` style="display: inline-block; vertical-align: middle;">
+            <h1 style="display: inline-block; vertical-align: middle; font-weight:300;">`TEMP`</h1>
+        </div>
+        <p>`DESCRIPTION`</p>
+        <div class="w3-row">
+            <div class="w3-half">
+                <p><i class="fa-solid fa-temperature-full fa-lg w3-center" style="width: 25px;"></i>`MAX_TEMP`</p>
+                <p><i class="fa-solid fa-wind fa-l w3-center" style="width: 25px;"></i>`WIND`</p>
+                <p><i class="fa-solid fa-droplet fa-l w3-center" style="width: 25px;"></i>`HUMIDITY`</p>
+                <p><i class="fa-solid fa-sun fa-l w3-center" style="width: 25px;"></i>`SUNRISE`</p>
+            </div>
+            <div class="w3-half">
+                <p><i class="fa-solid fa-temperature-empty fa-lg w3-center" style="width: 25px;"></i>`MIN_TEMP`</p>
+                <p><i class="fa-regular fa-binoculars fa-lg w3-center" style="width: 25px;"></i>`VISIBILITY`</p>
+                <p><i class="fa-solid fa-location-arrow fa-lg w3-center" style="width: 25px;"></i>`PRESSURE`</p>
+                <p><i class="fa-solid fa-moon fa-lg w3-center" style="width: 25px;"></i>`SUNSET`</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar BOTTOM -->
+        <div class="w3-bottom">
+            <div class="w3-display-container w3-theme w3-large w3-center">
+                <a class="w3-button w3-hover-theme w3-small" style="height:34px; cursor:default;"><span><i>Data provided by OpenWeatherMap&copy;</i></span></a>
+            </div>
+        </div>
+
+</body>
+</html>

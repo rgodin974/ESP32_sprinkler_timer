@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>ESP Web Server</title>
+    <meta name="viewport" content="width=device-width, initial-scale=0.95">
+    <script src="scripts.js"></script>
+    <script src="fontawesome.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="w3.css">
+    <link rel="stylesheet" type="text/css" href="w3-theme.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <main class="app">
+        
+        <!-- ********** Relays ********** -->
+        <section id="relays">
+            
+            <!-- Navbar TOP -->
+            <div class="w3-top">
+                <div class="w3-display-container w3-theme" style="height:43px;">
+                    <a class="w3-display-left w3-button w3-hover-theme w3-padding" href="#home"><i class="fa fa-chevron-left"></i>&nbsp;Back</a>
+                    <div class="w3-display-middle w3-medium"><b>Relays</b></div>
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="w3-container" style="margin-top: 50px;">
+                <h6 class="hr-lines"><span><b>Wifi</b></span></h6>
+                <div class="w3-row">`PLACEHOLDER_WIFI_INFO`</div>
+        
+                <h6 class="hr-lines"><span><b>Valves</b></span></h6>
+                <div class="w3-row">`PLACEHOLDER_VALVE_INFO`</div>
+        
+                <h6 class="hr-lines"><span><b>Relays</b></span></h6>
+                <div class="w3-row w3-center">`PLACEHOLDER_RELAYS`</div>
+            </div>
+
+            <!-- Navbar BOTTOM -->
+                <div class="w3-bottom">
+                    <div class="w3-display-container w3-theme w3-large">
+                        <a class="w3-half w3-button w3-hover-theme" href="#home"><i class="fa fa-house fa-lg"></i></a>
+                        <a class="w3-half w3-button w3-hover-theme" href="/weather"><i class="fa fa-cloud-sun-rain fa-lg"></i></a>
+                    </div>
+                </div>
+
+        </section>
+
+
+        <!-- ********** Home ********** -->
+        <section id="home">
+            
+            <!-- Navbar TOP -->
+            <div class="w3-top w3-white" style="height: 177px;">
+                <div class="w3-display-container w3-theme" style="height:43px;">
+                    <div class="w3-display-middle w3-medium"><b>Sprinkler Timer</b></div>
+                    <div class="w3-display-right w3-padding"><span id="mainTime"></span></div>
+                </div>
+
+                <div class="w3-row w3-container" style="margin-top: 7px;">
+                    <!-- Next irrigation -->
+                    <div class="w3-half">
+                        <div class="w3-card w3-border w3-round w3-margin-right-4" style="height: 120px;">
+                            <header class="w3-container w3-center w3-theme w3-border-bottom" style="border-radius: 3px 3px 0px 0px;">
+                                <h6 style="margin: 2px;"><b id="wateringStatus">&nbsp;</b></h6>
+                            </header>
+                            <div class="w3-container w3-center">
+                                <p><b id="wateringLine1"></b></p>
+                                <p id="wateringLine2"></p>
+                                <p id="wateringLine3"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sensors -->
+                    <div class="w3-half">
+                        <div class="w3-card w3-border w3-round w3-margin-left-4" style="height: 120px;">
+                            <header class="w3-container w3-center w3-border-bottom w3-theme" style="border-radius: 3px 3px 0px 0px;">
+                                <h6 style="margin: 2px;"><b>Infos</b></h6>
+                            </header>
+
+                            <div class="w3-container">
+                                <p><i class="w3-spin fa-solid fa-rotate fa" style="width: 15px;"></i><span id="flowSensor"></span></p>
+                                <p><i class="fa-solid fa-droplet fa" style="width: 15px;"></i><span id="moistureSensor"></span></p>
+                                <p><i class="fa-solid fa-sliders fa" style="width: 15px;"></i><span id="seasonAdjustment"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Content -->
+            <div class="w3-container" style="margin-top: 170px; margin-bottom: 50px;">
+                <!-- Waterings table -->
+                `PLACEHOLDER_WATERINGS`
+            </div>
+
+            <!-- Navbar BOTTOM -->
+            <div class="w3-bottom">
+                <div class="w3-display-container w3-theme w3-large">
+                    <a class="w3-third w3-button w3-hover-theme" href="#home"><i class="fa fa-house fa-lg"></i></a>
+                    <a class="w3-third w3-button w3-hover-theme" href="/weather"><i class="fa fa-cloud-sun-rain fa-lg"></i></a>
+                    <a class="w3-third w3-button w3-hover-theme" href="#relays"><i class="fa fa-sliders fa-lg"></i></a>
+                </div>
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>
