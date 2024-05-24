@@ -15,7 +15,7 @@ AsyncWebSocket ws("/ws");
 OpenWeatherMapCurrent client;
 String OPEN_WEATHER_MAP_APP_ID = "239ab703e6e79704c8afbada55a54f21";
 String OPEN_WEATHER_MAP_LOCATION_ID = "3014258";
-String OPEN_WEATHER_MAP_LANGUAGE = "fr";
+String OPEN_WEATHER_MAP_LANGUAGE = "en";
 boolean IS_METRIC = true;
 
 // Placeholders variables
