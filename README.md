@@ -1,5 +1,7 @@
 # ESP32_sprinkler_timer
 
+Sprinkler timer designed for ESP32
+
 Project based on RitonDuino : https://riton-duino.blogspot.com/2023/08/esp32-micro-irrigation-connectee-partie.html
 
 Add few features :
